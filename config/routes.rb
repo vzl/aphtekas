@@ -1,5 +1,8 @@
 Aphtekas::Application.routes.draw do
-
+  devise_for :users
+  match 'auth/:provider/callback', to: 'sessions#create'
+  match 'auth/failure', to: redirect('/')
+  match 'signout', to: 'sessions#destroy', as: 'signout'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -53,7 +56,7 @@ Aphtekas::Application.routes.draw do
   # root :to => 'welcome#index'
 
   #get "main/index"
-   root :to => 'main#index'
+   root :to => "main#index"
   # See how all your routes lay out with "rake routes"
 
   # This is a legacy wild controller route that's not recommended for RESTful applications.
