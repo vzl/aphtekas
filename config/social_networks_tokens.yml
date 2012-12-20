@@ -1,0 +1,15 @@
+facebook:
+  facebook_app_id: '492699170774843'
+  facebook_secret: '0891c5d2dda959f4334cd82d5804636f'
+
+twitter:
+  consumer_key: 'TRqZpzxSq2HgGElvmx046Q'
+  consumer_secret: '2ChK1ma7o98TO2LAsnwulZUH9mEQNZwmEAEZirlxQI'
+
+linkedin:
+  consumer_key: '1c9fluy4wlpq'
+  consumer_secret: 'IxFl2WW2xB0lYn7F'
+
+vkontakte:
+  api_key: '3305314'
+  api_secret: 'QAfO8prRljzH8QgQpqqk'
