@@ -43,7 +43,15 @@ gem 'jquery-rails'
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
+gem 'taps'
+
 # only for deploy on heroku
 group :production do
     gem 'pg'
 end
+
+group :development do
+    gem 'taps' #, :require => false # has an sqlite dependency, which heroku hates
+    gem 'sqlite3'
+end
+
