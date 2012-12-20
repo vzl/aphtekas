@@ -7,4 +7,4 @@ require File.expand_path('../application', __FILE__)
 Aphtekas::Application.initialize!
 
 #ENV['RAILS_ENV'] ||= 'production'
-Rails.env='development'
+#Rails.env='development'
