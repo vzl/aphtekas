@@ -1,14 +1,12 @@
 Aphtekas::Application.routes.draw do
-<<<<<<< HEAD
 
   # category of products
   resources :categories
-=======
+
   devise_for :users
   match 'auth/:provider/callback', to: 'sessions#create'
   match 'auth/failure', to: redirect('/')
   match 'signout', to: 'sessions#destroy', as: 'signout'
->>>>>>> remotes/origin/social_networks
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
