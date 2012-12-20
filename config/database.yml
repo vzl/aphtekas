@@ -31,8 +31,9 @@ test:
   password: 
   socket: /var/lib/mysql/mysql.sock
 
+# only for heroku deploy
 production:
-  adapter: mysql2
+  adapter: postgresql
   encoding: utf8
   reconnect: false
   database: aphtekas_production
