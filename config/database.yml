@@ -28,7 +28,7 @@ test:
   database: aphtekas_test
   pool: 5
   username: root
-  password: root
+  password: 
   socket: /var/lib/mysql/mysql.sock
 
 production:

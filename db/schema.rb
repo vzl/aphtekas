@@ -64,6 +64,13 @@ ActiveRecord::Schema.define(:version => 20121202234416) do
 
   add_index "products", ["category_id"], :name => "index_products_on_category_id"
 
+  create_table "products_temps", :force => true do |t|
+    t.integer "category_id"
+    t.integer "sub_id"
+    t.string  "url"
+    t.integer "status"
+  end
+
   create_table "sub_category_products", :force => true do |t|
     t.string   "url"
     t.integer  "categoryproduct_id"
