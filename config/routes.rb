@@ -1,7 +1,7 @@
 Aphtekas::Application.routes.draw do
 
   # category of products
-   resources :categories
+  resources :categories
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
