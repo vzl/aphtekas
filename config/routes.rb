@@ -3,6 +3,9 @@ Aphtekas::Application.routes.draw do
   # category of products
   resources :categories
 
+  # products
+  resources :categories
+
   devise_for :users
   match 'auth/:provider/callback', to: 'sessions#create'
   match 'auth/failure', to: redirect('/')
