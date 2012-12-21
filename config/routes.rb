@@ -4,7 +4,7 @@ Aphtekas::Application.routes.draw do
   resources :categories
 
   # products
-  resources :categories
+  resources :products
 
   devise_for :users
   match 'auth/:provider/callback', to: 'sessions#create'
