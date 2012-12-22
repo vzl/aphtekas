@@ -2,3 +2,13 @@
 rails.png: rails.png
 application.js: application.js
 application.css: application.css
+foundation/orbit/bullets.jpg: foundation/orbit/bullets.jpg
+foundation/orbit/left-arrow-small.png: foundation/orbit/left-arrow-small.png
+foundation/orbit/left-arrow.png: foundation/orbit/left-arrow.png
+foundation/orbit/loading.gif: foundation/orbit/loading.gif
+foundation/orbit/mask-black.png: foundation/orbit/mask-black.png
+foundation/orbit/pause-black.png: foundation/orbit/pause-black.png
+foundation/orbit/right-arrow-small.png: foundation/orbit/right-arrow-small.png
+foundation/orbit/right-arrow.png: foundation/orbit/right-arrow.png
+foundation/orbit/rotator-black.png: foundation/orbit/rotator-black.png
+foundation/orbit/timer-black.png: foundation/orbit/timer-black.png
