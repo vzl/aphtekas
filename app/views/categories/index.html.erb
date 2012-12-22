@@ -5,14 +5,15 @@
     <th>Name</th>
 <%-#    <th>Url</th> -%>
 <%-#    <th>Status</th> -%>
-    <th></th>
+    <th>Count of products</th>
     <th></th>
     <th></th>
   </tr>
 
 <% @categories.each do |category| %>
   <tr>
-    <td><%= category.name %></td>
+    <td><%= link_to category.name, category %></td>
+    <td><%= category.products.count %></td>
 <%
 =begin %>
     <td><%= category.url %></td>

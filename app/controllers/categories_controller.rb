@@ -10,18 +10,20 @@ class CategoriesController < ApplicationController
     end
   end
 
-=begin
+
   # GET /categories/1
   # GET /categories/1.json
   def show
-    @category = Category.find(params[:id])
+#    @category = Category.find(params[:id])
+    @products = Category.find(params[:id]).products
 
     respond_to do |format|
       format.html # show.html.erb
-      format.json { render json: @category }
+      format.json { render json: @products }
     end
   end
 
+=begin
   # GET /categories/new
   # GET /categories/new.json
   def new

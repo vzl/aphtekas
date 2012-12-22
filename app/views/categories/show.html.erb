@@ -1,20 +1,36 @@
-<p id="notice"><%= notice %></p>
 
+<%
+=begin
+%>
+
+<p id="notice"><%= notice %></p>
 <p>
   <b>Name:</b>
   <%= @category.name %>
 </p>
-
 <p>
   <b>Url:</b>
   <%= @category.url %>
 </p>
-
 <p>
   <b>Status:</b>
   <%= @category.status %>
 </p>
-
-
 <%= link_to 'Edit', edit_category_path(@category) %> |
 <%= link_to 'Back', categories_path %>
+
+<%
+=end
+%>
+
+<table>
+<% @products.each do |product| %>
+<tr>
+    <td><%= product.name %></td>
+    <td><%= product.international_name %></td>
+    <td><%= product.producer %></td>
+    <td><%= product.formofproduct %></td>
+    <td><%= product.Indications %></td>
+</tr>
+<% end%>
+</table>
