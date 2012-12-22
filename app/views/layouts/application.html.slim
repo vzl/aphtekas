@@ -1,0 +1,42 @@
+doctype 5
+html
+    head        
+        meta charset="utf-8"
+        meta name="description" content=""
+        meta name="author" content=""
+        meta name="keywords" content=""
+        
+        meta name="viewport" content="width=device-width" 
+        
+        = csrf_meta_tags
+
+        title Aphtekas
+        
+        = stylesheet_link_tag    "application", :media => "all"
+    
+    body
+    
+        .fixed.contain-to-grid   
+            nav.top-bar
+                ul
+                    li.name: h1: a href="#" Aphtekas
+                    li.toggle-topbar: a href="#"
+
+                ul.right
+                    / li.divider.show-for-medium-and-up
+                    li: a href="#" About
+
+        .row
+            .seven.columns.centered
+                #loginLinks.panel.center
+                    a href="#" Facebook
+                    a href="#" Twitter
+                    a href="#" Linkedin
+                    a href="#" Vkontakte
+
+        .row
+            .twelve.columns
+                == yield
+
+        
+        = javascript_include_tag "application"
