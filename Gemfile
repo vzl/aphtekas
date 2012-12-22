@@ -8,8 +8,9 @@ gem 'rails', '3.2.8'
 gem 'mysql2'
 gem 'execjs'
 
-gem 'libv8'
-gem 'therubyracer'
+#gem 'libv8', '3.11.8.3'
+
+gem 'therubyracer','0.10.2', :platform => :ruby
 gem 'nokogiri'
 
 gem 'heroku'
@@ -23,11 +24,18 @@ group :assets do
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer'
+  
+  gem 'compass-rails'
+  gem 'zurb-foundation'
 
   gem 'uglifier', '>= 1.0.3'
 end
 
 gem 'jquery-rails'
+
+# Slim 
+gem 'slim-rails'
+gem 'slim', '~> 1.2.2'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

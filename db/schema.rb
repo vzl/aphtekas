@@ -28,13 +28,6 @@ ActiveRecord::Schema.define(:version => 20121202234416) do
     t.integer  "status"
   end
 
-  create_table "category_products", :force => true do |t|
-    t.string   "name"
-    t.string   "url"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
-
   create_table "contacts", :force => true do |t|
     t.string   "title"
     t.text     "phone_number"
