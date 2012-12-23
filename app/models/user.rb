@@ -9,8 +9,8 @@ class User < ActiveRecord::Base
       user.provider = auth.provider
       user.uid = auth.uid
       user.name = auth.info.name
-      user.email = auth.info.email
-      user.password = 'q1w2e3r4'
+      user.email = auth.info.email ? auth.info.email : "auth_user@gmail.com"
+      user.password = 'auth_user'
       user.oauth_token = auth.credentials.token
       user.save!
     end
