@@ -66,6 +66,7 @@ gem 'taps'
 # only for deploy on heroku
 group :production do
     gem 'pg'
+    gem 'zurb-foundation'
 end
 
 group :development do
