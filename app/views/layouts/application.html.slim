@@ -12,8 +12,9 @@ html
 
         title Aphtekas
         
+
         = stylesheet_link_tag    "application", :media => "all"
-    
+
     body
     
         .fixed.contain-to-grid   
@@ -38,5 +39,4 @@ html
             .twelve.columns
                 == yield
 
-        
-        = javascript_include_tag "application"
+	= javascript_include_tag "application", "jquery-ui-1.9.2.custom.min.js"
