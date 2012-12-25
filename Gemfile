@@ -35,6 +35,8 @@ group :assets do
   gem 'compass-rails'
   gem 'zurb-foundation'
 
+  gem 'skim'
+
   gem 'uglifier', '>= 1.0.3'
 end
 
@@ -45,6 +47,9 @@ gem 'jquery-rails'
 # Slim 
 gem 'slim-rails'
 gem 'slim', '~> 1.2.2'
+
+# Ебанем по неуклюжему JS!
+gem 'rails-backbone'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
